@@ -1,6 +1,7 @@
 const cookieParser = require('cookie-parser')
 const express = require('express')
 const userRouter = require('./routes/userRoutes')
+const landingPage = require('./routes/landingpage')
 const mongo = require('./db/db')
 require('dotenv').config()
 
@@ -14,5 +15,6 @@ app.use(cookieParser())
 const port = process.env.PORT
 
 app.use('/api', userRouter)
+app.use('/', landingPage)
 
 app.listen(port, ()=> console.log(`lisening on port ${port}`))

@@ -9,7 +9,7 @@ const router = Router()
 router
     .post('/user/register', registerUser)
     .post('/user/login', loginUser)
-    .delete('/user/delete/:incoming', authMiddleware, delete_A_User)
+    .delete('/user/delete/:id', authMiddleware, delete_A_User)
     .put('/user/update/:id',authMiddleware, update_A_User)
     .get('/users', get_Users)
 
