@@ -1,5 +1,5 @@
 const { Router } = require("express");
-const { allApis } = require("../controller/allAPIs");
+const  allApis  = require("../controller/allAPIs");
 
 
 const router = Router()

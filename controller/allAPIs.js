@@ -1,14 +1,14 @@
 
 const allAPIs = (req, res) => {
-    res.json(
+ res.json(
         {
            userRegister: '/api/user/register',
            userLogin: '/api/user/login',
            DeleteUser: '/api/user/delete/:id',
             updateuser: '/api/user/update/:id',
-           getAllUsers: '/'
+           getAllUsers: '/users'
        }
     )
 } 
 
-module.exports = {allAPIs}
+module.exports = allAPIs
